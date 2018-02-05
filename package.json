@@ -3,11 +3,26 @@
   "version": "0.1.0",
   "description": "A simple server just return the request.",
   "main": "index.js",
+  "bin": {
+    "start-debug-server": "bin/start"
+  },
   "scripts": {
+    "prepublishOnly": "node scripts/prepublish-checklist.js",
+    "publish": "echo \"Done publishing, don't forget to:\n  1. **dist-tag** your channel in npm.\n  2. bump version in package.json\nGood luck with the publish ;)\"",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/whitetrefoil/debug-server.git"
   },
   "author": "WhiteTrefoil <whitetrefoil@gmail.com>",
   "license": "Unlicense",
+  "engines": {
+    "node": ">=8.9.1"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "dependencies": {
     "fancy-log": "^1.3.2",
     "koa": "^2.4.1",
