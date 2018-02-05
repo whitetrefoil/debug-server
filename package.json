@@ -1,6 +1,6 @@
 {
   "name": "@whitetrefoil/debug-server",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "A simple server just return the request.",
   "main": "index.js",
   "bin": {
