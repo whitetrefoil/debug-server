@@ -265,3 +265,4 @@ typings/
 .idea/misc.xml
 .idea/kotlinc.xml
 ~*
+!bin/
